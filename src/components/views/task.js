@@ -1,11 +1,15 @@
 import React from 'react'
 
 class Task extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <div>
-        This is Task
-      </div>
+      <li className="list-group-item">
+        {this.props.todo.text}
+      </li>
     )
   }
 }

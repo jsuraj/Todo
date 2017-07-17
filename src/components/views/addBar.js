@@ -1,4 +1,6 @@
 import React from 'react'
+import store from '../../store'
+import {addTodo} from '../../actions/actionCreators'
 
 class AddBar extends React.Component {
   constructor(props) {
@@ -19,7 +21,9 @@ class AddBar extends React.Component {
 
   handleClick(e) {
     e.preventDefault();
-    alert('clicked'+this.state.inputText);
+    // alert('clicked'+this.state.inputText);
+    console.log('clicked: '+this.state.inputText);
+    store.dispatch(addTodo(this.state.inputText));
   }
 
   render() {

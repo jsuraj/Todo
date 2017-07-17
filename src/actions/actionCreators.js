@@ -1,5 +1,6 @@
 
 export function addTodo(text) {
+  console.log('addTodo called');
   return {
     type : 'ADD_TODO',
     text

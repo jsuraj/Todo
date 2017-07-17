@@ -11,7 +11,7 @@ function todoApp(state = intitalState, action) {
           ...state.todos,
             {
               text: action.text,
-              completes: false
+              completed: false
             }
         ]
       })
