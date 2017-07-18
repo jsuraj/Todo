@@ -12,7 +12,7 @@ class TaskList extends React.Component {
   render() {
     var rows = [];
     for(var i=0;i<this.props.todos.length;i++) {
-      rows.push(<Task todo={this.props.todos[i]} key={Math.random()}/>)
+      rows.push(<Task todo={this.props.todos[i]} key={Math.random()} index={i}/>)
     }
     return (
       <ul className="list-group">
