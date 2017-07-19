@@ -16,7 +16,7 @@ class Task extends React.Component {
 
   render() {
     return (
-      <li className={"list-group-item "+this.props.todo.completed} onClick={this.handleClick}>
+      <li className={"list-group-item task "+this.props.todo.completed} onClick={this.handleClick}>
         {this.props.todo.text}
       </li>
     )

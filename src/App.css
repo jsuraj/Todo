@@ -19,9 +19,6 @@
 }
 
 /*Styling for list item: should be placed in apt file location*/
-.true {
-    background-color: #78F510;
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
