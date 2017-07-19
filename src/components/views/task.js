@@ -18,7 +18,7 @@ class Task extends React.Component {
     return (
       <li className={"list-group-item "+this.props.todo.completed} onClick={this.handleClick}>
         {this.props.todo.text}
-        <div className="offset-md-11">
+        <div className="offset-md-11 offset-10">
           <i className="material-icons" style={{color: '#ffffff'}}>check_circle</i>
         </div>
       </li>
