@@ -17,7 +17,7 @@ class TaskList extends React.Component {
     }
     if(this.props.todos.length>0) {
       buttons = <div className="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" className="btn btn-secondary">All</button>
+                  <button type="button" className="btn btn-secondary active">All</button>
                   <button type="button" className="btn btn-secondary">Active</button>
                   <button type="button" className="btn btn-secondary">Done</button>
                 </div>;
