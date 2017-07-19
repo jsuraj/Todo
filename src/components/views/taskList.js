@@ -11,13 +11,26 @@ class TaskList extends React.Component {
 
   render() {
     var rows = [];
+    var buttons = '';
     for(var i=0;i<this.props.todos.length;i++) {
       rows.push(<Task todo={this.props.todos[i]} key={Math.random()} index={i}/>)
     }
+    if(this.props.todos.length>0) {
+      buttons = <div className="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" className="btn btn-secondary">All</button>
+                  <button type="button" className="btn btn-secondary">Active</button>
+                  <button type="button" className="btn btn-secondary">Done</button>
+                </div>;
+    }
     return (
-      <ul className="list-group">
-        {rows}
-      </ul>
+      <div>
+        <ul className="list-group">
+          {rows}
+        </ul>
+        <div>
+          {buttons}
+        </div>
+      </div>
     )
   }
 }
