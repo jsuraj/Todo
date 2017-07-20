@@ -13,3 +13,10 @@ export function toggleTodo(index) {
     index
   }
 }
+
+export function setActiveButton(index) {
+  return {
+    type : 'SET_ACTIVE',
+    index
+  }
+}

@@ -12,9 +12,9 @@ class TaskList extends React.Component {
 
   getButtons() {
     return <div className="btn-group" role="group" aria-label="Basic example">
-             <Button buttonName="All" />
-             <Button buttonName="Active" />
-             <Button buttonName="Completed" />
+             <Button buttonName="All" index={0} active={this.props.active} />
+             <Button buttonName="Active" index={1} active={this.props.active} />
+             <Button buttonName="Completed" index={2} active={this.props.active} />
            </div>;
   }
 
@@ -53,7 +53,8 @@ class TaskList extends React.Component {
 
 function mapStateToProps(store){
   return {
-    todos : store.todos
+    todos : store.todos,
+    active : store.activeButton
   }
 }
 

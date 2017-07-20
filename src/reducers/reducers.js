@@ -1,6 +1,7 @@
 
 const intitalState = {
-  todos : []
+  todos : [],
+  activeButton : 0
 }
 
 function todoApp(state = intitalState, action) {
@@ -25,6 +26,10 @@ function todoApp(state = intitalState, action) {
           }
           return todo;
         })
+      })
+    case 'SET_ACTIVE':
+      return Object.assign({}, state, {
+        activeButton : action.index
       })
     default:
       return state
