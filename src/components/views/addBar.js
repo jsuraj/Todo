@@ -23,7 +23,11 @@ class AddBar extends React.Component {
     e.preventDefault();
     // alert('clicked'+this.state.inputText);
     // console.log('clicked: '+this.state.inputText);
-    store.dispatch(addTodo(this.textInput.value));
+    if(this.textInput.value.length >=3) {
+      store.dispatch(addTodo(this.textInput.value));
+    } else {
+      alert('Task should be at least 3 characters long.');
+    }
     // console.log(this.textInput.value);
     this.textInput.value="";
   }

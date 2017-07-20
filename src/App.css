@@ -18,6 +18,11 @@
   font-size: large;
 }
 
+/*Todo App*/
+.app-div {
+  padding: 10px;
+}
+
 /*Styling for list item: should be placed in apt file location*/
 
 @keyframes App-logo-spin {
