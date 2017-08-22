@@ -11,13 +11,15 @@ class Task extends React.Component {
   handleClick() {
     // e.preventDefault();
     console.log(this.props.index);
-      store.dispatch(toggleTodo(this.props.index));
+    store.dispatch(toggleTodo(this.props.index));
   }
 
   render() {
     return (
       <li className={"list-group-item task "+this.props.todo.completed} onClick={this.handleClick}>
-        {this.props.todo.text}
+        <h6 style={this.props.todo.completed ? {"text-decoration": "line-through"} : {}}>
+          {this.props.todo.text}
+        </h6>
       </li>
     )
   }
