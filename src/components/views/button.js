@@ -9,8 +9,8 @@ class Button extends React.Component {
   }
 
   handleButtonClick() {
-    console.log('handleClick called');
-    console.log('handleButtonClick index: '+this.props.index);
+    // console.log('handleClick called');
+    // console.log('handleButtonClick index: '+this.props.index);
     store.dispatch(setActiveButton(this.props.index));
   }
 
