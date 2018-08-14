@@ -31,6 +31,10 @@ function todoApp(state = intitalState, action) {
       return Object.assign({}, state, {
         activeButton : action.index
       })
+    case 'DELETE_TODO':
+      return Object.assign({}, state, {
+        todos: state.todos.filter((todo, index) => index !== action.index)
+      })
     default:
       return state
   }
