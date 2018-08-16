@@ -1,5 +1,5 @@
 import React from 'react'
-import store from '../../store'
+import { store } from '../../store'
 import {setActiveButton} from '../../actions/actionCreators'
 
 class Button extends React.Component {

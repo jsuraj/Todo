@@ -1,6 +1,6 @@
 import React from 'react'
 import Task from './task'
-import store from '../../store'
+import { store } from '../../store'
 import {connect} from 'react-redux'
 import Button from './button'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import store from '../../store'
+import { store } from '../../store'
 import { toggleTodo, deleteTodo } from '../../actions/actionCreators'
 
 class Task extends React.Component {
